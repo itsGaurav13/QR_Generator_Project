@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(pngtree-the-concept-of-data-processing-using-virtual-blocks-covered-in-qr-image_2659168.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.container {
+  background: #fff;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1px;
+}
+.container input {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 16px;
+  margin-top: 16px;
+  width: 100%;
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: rgb(22, 22, 182);
+  color: whitesmoke;
+  width: 100%;
+  cursor: pointer;
+}
+
+#imageBox{
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+}
+#imageBox img{
+    width: 100%;
+    padding: 10px;
+}
+#imageBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    23%{
+
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
